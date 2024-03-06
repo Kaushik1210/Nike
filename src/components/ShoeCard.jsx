@@ -1,12 +1,11 @@
-import React from 'react'
+import  React  from "react";
 
 const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
-
-    const handleClick = () => {
-        if (bigShoeImg !== imgURL.bigShoe) {
-          changeBigShoeImage(imgURL.bigShoe);
-        }
-      };
+  const handleClick = () => {
+    if (bigShoeImg !== imgURL.bigShoe) {
+      changeBigShoeImage(imgURL.bigShoe);
+    }
+  };
 
   return (
     <div
@@ -27,7 +26,7 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ShoeCard
+export default ShoeCard;

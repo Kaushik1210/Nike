@@ -1,11 +1,12 @@
-import React from "react"
-import { useState } from "react"
-import { shoes, statistics } from "../constants"
+import { useState } from "react";
 
-import  ShoeCard  from "../components/ShoeCard"
-import  {bigShoe1}  from "../assets/images"
-import  {arrowRight}  from "../assets/icons"
-import Button from "../components/Button"
+import { shoes, statistics } from "../constants";
+
+import { bigShoe1 } from "../assets/images";
+import { arrowRight } from "../assets/icons";
+import Button from "../components/Button";
+import ShoeCard from "../components/ShoeCard"
+
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
@@ -21,7 +22,7 @@ const Hero = () => {
         </p>
 
         <h1 className='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
-          <span className='xl:bg-white xl:whitespace-nowrap relative z-0 pr-10'>
+          <span className='xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>
             The New Arrival
           </span>
           <br />
@@ -32,7 +33,6 @@ const Hero = () => {
           your active life.
         </p>
 
-        {/* <Button label='Shop now' iconURL={arrowRight} /> */}
         <Button label='Shop now' iconURL={arrowRight} />
 
         <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
@@ -47,7 +47,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='relative -z-10 flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
+      <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
         <img
           src={bigShoeImg}
           alt='shoe colletion'

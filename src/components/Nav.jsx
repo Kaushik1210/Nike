@@ -46,8 +46,8 @@ const Nav = () => {
           </div>
 
           {openMenu &&
-          <div className=' z-50  fixed bg-black bg-opacity-30 inset-0  '>
-          <div className=' absolute top-16 right-16 w-72 h-72 flex flex-col items-center gap-10 bg-white rounded-lg  justify-center'>
+          <div className='  fixed bg-black bg-opacity-30 inset-0  '>
+          <div className=' absolute z-10 top-16 right-16 w-72 h-72 flex flex-col items-center gap-10 bg-white rounded-lg  justify-center'>
           {navLinks.map((item)=>(
             <li className='list-none  ' key={item.label}>
               <a
